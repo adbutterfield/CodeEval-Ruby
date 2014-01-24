@@ -1,0 +1,15 @@
+# file_size.rb
+
+# Challenge Description:
+
+# Print the size of a file in bytes.
+# Input:
+
+# The first argument to your program has the path to the file you need to check the size of.
+# Output sample:
+
+# Print the size of the file in bytes. E.g.
+
+# 55
+
+puts File.size(ARGV[0])
