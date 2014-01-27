@@ -36,14 +36,7 @@ File.open(ARGV[0]).each_line do |line|
     line.each_char do |char|
       as_hash[char] += 1
     end
-    # sorted_hash = as_hash.sort_by { |key, value| -value }
-    # length = sorted_hash.count
-    # result = 0
-    # i = 0
-    # 26.downto(27 - length).each do |r|
-    #   result += sorted_hash[i][1] * r
-    #   i += 1
-    # end
+
     next_value = 26
     result = 0
     as_hash.sort_by { |key, value| -value }.each do |_, count| 
